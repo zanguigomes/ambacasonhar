@@ -165,6 +165,7 @@ class PostResource extends Resource
                 Tables\Columns\TextColumn::make('user.name')
                 ->label('Por'),
             ])
+            ->defaultSort('id', 'desc')
             ->filters([
                 //
             ])

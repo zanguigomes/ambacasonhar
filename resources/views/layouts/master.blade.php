@@ -144,9 +144,9 @@
                 <div class="row">
                     <div class="col-12 col-md-12 col-lg-4">
                         <div class="logo-box">
-                            <a href="/">
+                            <a href="{{ route('site.index') }}">
                                 <div class="logo-img">
-                                    <img src="{{ asset('theme/assets/images/logo.png') }}" alt="">
+                                    <img src="{{ asset('theme/assets/images/logo.png') }}" alt="Ambaca a Sonhar">
                                 </div>
                                 <div class="logo-text">
                                     <div class="logo-lead text-uppercase">AmbacaSonhar</div>
@@ -221,7 +221,7 @@
     <footer class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-4 logo-footer-area text-center">
+                <div class="col-12 col-md-12  col-lg-4 logo-footer-area text-center">
 
                    <figure class="footer-logo">
                         <img src="{{ asset('theme/assets/images/logo-footer.png') }}" alt="">
@@ -237,7 +237,7 @@
                     </div> --}}
                 </div>
 
-                <div class="col-6 col-md-2">
+                <div class="col-6 col-md-3 col-lg-2">
                     <h3>Governo</h3>
                     <ul>
                         <li><a href="{{ route('site.pages.page', 'informacao-geral') }}">Sobre o Município</a></li>
@@ -247,7 +247,7 @@
                     </ul>
                 </div>
 
-                <div class="col-6 col-md-2">
+                <div class="col-6 col-md-3 col-lg-2">
                     <h3>Munícipe</h3>
                     <ul>
                         <li><a href="{{ route('site.pages.services') }}">Serviços</a></li>
@@ -256,7 +256,7 @@
                     </ul>
                 </div>
 
-                <div class="col-12 col-md-2">
+                <div class="col-6 col-md-3 col-lg-2">
                     <h3>Visitante</h3>
                     <ul>
                         <li><a href="{{ route('site.pages.page', 'como-chegar') }}">Como chegar</a></li>
@@ -269,7 +269,7 @@
 
                 </div>
 
-                <div class="col-12 col-md-2">
+                <div class="col-6 col-md-3 col-lg-2">
                     <h3>Sobre</h3>
                     <ul>
                         <li><a href="{{ route('site.contact') }}"> Contacto</a></li>

@@ -18,7 +18,7 @@
                                 <img src="{{ url("storage/{$mainHeading->thumb}") }}" alt="{{ $mainHeading->title }}">
                                 <figcaption>
                                     <h1>{{ $mainHeading->title }}</h1>
-                                    {!! \Illuminate\Support\Str::limit($mainHeading->head_line, 130, $end = '...') !!}
+                                    <p>{!! \Illuminate\Support\Str::limit($mainHeading->head_line, 130, $end = '...') !!}</p>
                                 </figcaption>
                             </figure>
                         </a>
@@ -544,14 +544,14 @@
                                     alt="{{ $fourthEntry->title }}">
                                 <figcaption>
                                     <h2>{{ $fourthEntry->title }}</h2>
-                                    {!! \Illuminate\Support\Str::limit($fourthEntry->head_line, 130, $end = '...') !!}
+                                    <p>{!! \Illuminate\Support\Str::limit($fourthEntry->head_line, 130, $end = '...') !!}</p>
                                 </figcaption>
                             </figure>
                         </a>
                     @endif
 
                 </div>
-                <div class="col-12 col-md-6 col-lg-3">
+                <div class="col-12 col-md-6 col-lg-3 fifthEntry">
                     <a href="{{ route('site.pages.post', $fifthEntry->slug) }}" class="link-news">
                         <div class="card">
                             <div class="img-box">
@@ -564,7 +564,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3">
+                <div class="col-12 col-md-6 col-lg-3 sixth">
                     <a href="{{ route('site.pages.post', $sixth->slug) }}" class="link-news">
                         <div class="card">
                             <div class="img-box">
@@ -697,7 +697,7 @@
                                 <p><span class="icon radius100"><i class="fa-regular fa-calendar"></i></span> {{ date('d M Y', strtotime($lastGalery->created_at)) }} &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
                                     <i class="fa-regular fa-images"></i> {{ count($lastGalery->images) }} fotos</p>
                                 <h2>{{ $lastGalery->title }}</h2>
-                                {!! \Illuminate\Support\Str::limit($lastGalery->head_line, 130, $end = '...') !!}
+                                <p>{!! \Illuminate\Support\Str::limit($lastGalery->head_line, 130, $end = '...') !!}</p>
                             </figcaption>
                         </figure>
                     </a>
@@ -722,7 +722,7 @@
             </div>
             <div class="row">
                 @foreach ($galleryList as $feat)
-                    <div class="col-12 col-md-6 col-lg-4">
+                    <div class="col-12 col-md-6 col-lg-4 gallery-list">
                         <a href="{{ route('site.gallery', $feat->slug) }}" class="link-news">
                             <div class="card">
                                 <div class="img-box">

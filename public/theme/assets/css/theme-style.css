@@ -617,6 +617,7 @@ header .header-submenu {
         padding-top: 2rem;
     }
 }
+
 header .header-submenu .logo-box .logo-img,
 header .header-submenu .logo-box .logo-text {
     float: left;
@@ -1986,11 +1987,11 @@ section.our-land .intro p{
     font-weight: 400;
 }
 section.our-land .img-box{
-    border-radius: 20px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
+    border-radius: 20px;
 }
 section.our-land .carousel-item{
     position: relative
@@ -2056,13 +2057,13 @@ section.count_down_script{
     top: 0;
     left: 0;
     right: 0;
-    background-color: var(--third-color);
+    background-color: yellow;
     padding: 20px 0;
     text-align: center;
     font-size: 1.3rem;
     font-weight: normal;
     color: var(--primary-color);
-    z-index: 10000;
+    z-index: 999 !important;
     border: unset;
     border-radius: 0 !important;
     -webkit-border-radius: 0 !important;
@@ -2305,16 +2306,104 @@ footer .copyright .system-version {
 }
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 320px) {
+@media (max-width: 480px) {
     section.header-content .main-entry{
         height: auto;
         margin-bottom: 30px;
+    }
+    section.header-content .main-entry .lead h1{
+        font-size: 1.5rem;
+        width: 100%;
+        line-height: 30px;
+    }
+    section.header-content .main-entry .lead p{
+        display: none;
     }
 
     .intro h2{
         border-left: unset;
     }
+    section.header-content .secondary-entries h2{
+        margin-bottom: 30px !important;
+    }
+    .nav-tab-content .nav-item{
+        width: 50%;
+        text-align: center !important;
+    }
+    .nav-tab-content .nav-item:last-child{
+        width: 100%;
+    }
+    .nav-tab-content .nav-link{
+        width: 100%;
+    }
+    section.photo-gallery{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    section.photo-gallery .img-box .carousel-text h2{
+        font-size: 1.5rem;
+        line-height: 30px;
+        padding: 0 !important;
+    }
+    section.photo-gallery .img-box .carousel-text p{
+        display: none !important;
+    }
+    section.photo-gallery .intro a{
+        font-size: 1rem !important;
+        font-weight: normal !important;
+    }
+    section.quick-access{
+        padding-bottom: 0;
+    }
+    section.block-posts h2{
+        font-size: 1.1rem !important;
+    }
+    section.block-posts .link,
+    .home-documents-list .link{
+        margin-top: 0 !important;
+    }
+    section.block-posts .link a{
+        font-size: 1rem !important;
+        font-weight: normal !important;
+    }
+    section.block-posts .lead img{
+        height: auto !important;
+    }
+    section.block-posts .lead h2{
+        font-size: 1.1rem !important;
+    }
+    section.block-posts .lead p{
+        display: none;
+    }
+    section.block-posts .fifthEntry{
+        margin-bottom: 20px;
+    }
+
+    section.block-posts .sixth .card-body,
+    section.block-posts .fifthEntry .card-body{
+        padding: 0 !important;
+        margin: 0 !important;
+        flex: 0 0 auto;
+    }
+    section.block-posts .sixth .card,
+    section.block-posts .fifthEntry .card{
+        height: auto !important;
+    }
+    section.galleries-list{
+        padding-bottom: 30px;
+    }
+    section.galleries-list .gallery-list{
+        margin-bottom: 20px;
+    }
+    .single-page-header{
+        height: 150px;
+    }
+    .copyright{
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+    }
 }
+
 @media (min-width: 576px) {
     section.header-content .main-entry{
         height: auto;
